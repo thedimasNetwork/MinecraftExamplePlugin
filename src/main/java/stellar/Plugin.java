@@ -6,6 +6,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Plugin extends JavaPlugin {
     @Override
     public void onEnable() {
+        getServer().getPluginManager().registerEvents(new Handler(), this); // listen events
         // calls on server start (end of reload)
     }
 
